@@ -30,40 +30,12 @@ collections:
     folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    sortable_fields: ["date", "title"]
-    summary: "{{title}} — {{year}}/{{month}}/{{day}}"
-    view_filters:
-      - label: "這週"
-        field: "date"
-        pattern: "now/w"
     editor:
-      preview: true
+      preview: false
     fields:
-      - label: "版型"
-        name: "layout"
-        widget: "hidden"
-        default: "single"
       - label: "標題"
         name: "title"
         widget: "string"
-      - label: "發佈時間"
-        name: "date"
-        widget: "datetime"
-        format: "YYYY-MM-DD HH:mm:ss Z"
-      - label: "分類"
-        name: "categories"
-        widget: "list"
-        allow_add: true
-        default: ["日常"]
-      - label: "標籤"
-        name: "tags"
-        widget: "list"
-        allow_add: true
-        required: false
-      - label: "摘要"
-        name: "excerpt"
-        widget: "text"
-        required: false
       - label: "內文"
         name: "body"
         widget: "markdown"
