@@ -32,12 +32,13 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     sortable_fields: ["date", "title"]
     summary: "{{title}} — {{year}}/{{month}}/{{day}}"
-    view_filters:
-      - label: "這週"
-        field: "date"
-        pattern: "now/w"
+    # Disable view filters while debugging Decap DOM errors to minimize initial renders
+    # view_filters:
+    #   - label: "這週"
+    #     field: "date"
+    #     pattern: "now/w"
     editor:
-      preview: true
+      preview: false
     fields:
       - label: "版型"
         name: "layout"
