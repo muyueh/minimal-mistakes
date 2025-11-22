@@ -7,11 +7,8 @@
     <link rel="stylesheet" href="https://unpkg.com/modern-normalize@^2.0.0/modern-normalize.css" />
   </head>
   <body>
-    <script>
-      // Avoid running the Decap CMS bootstrap twice when the script auto-initializes.
-      window.CMS_MANUAL_INIT = true;
-    </script>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <!-- Pin to a patched Decap CMS release to avoid upstream DOM removal errors -->
+    <script src="https://unpkg.com/decap-cms@^3.1.9/dist/decap-cms.js"></script>
     <script>
       CMS.init();
     </script>
