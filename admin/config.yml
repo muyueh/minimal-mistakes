@@ -4,7 +4,8 @@ backend:
   repo: muyueh/minimal-mistakes
   # 如果文章存放在非 main 的分支（例如 work），請同步改成該分支名稱
   branch: work
-  site_domain: https://muyueh.github.io/minimal-mistakes
+  # GitHub Pages requires the domain only (no baseurl) for the OAuth callback
+  site_domain: https://muyueh.github.io
   auth_type: implicit
   app_id: Ov23liPThsBYrLtx6Rih
   # 如果使用託管或自架的 OAuth 代理伺服器，更新 base_url
