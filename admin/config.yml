@@ -11,7 +11,8 @@ backend:
   # 例如使用 decap-cms-oauth-server，可設為：
   # base_url: https://decap-cms-oauth-server.onrender.com
 
-local_backend: true
+# Disable the local backend in production; enable explicitly only for local development
+local_backend: false
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
