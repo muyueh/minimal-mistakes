@@ -38,6 +38,8 @@ docs:
     children:
       - title: "Quick-Start Guide"
         url: /docs/quick-start-guide/
+      - title: "Deploying on Netlify"
+        url: /docs/netlify-deployment/
       - title: "Structure"
         url: /docs/structure/
       - title: "Installation"

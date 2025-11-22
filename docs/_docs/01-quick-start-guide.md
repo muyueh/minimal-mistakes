@@ -107,6 +107,9 @@ To do so fork the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-
 **GitHub Pages Alternatives:** Looking to host your site for free and install/update the theme painlessly? [Netlify][netlify-jekyll], [GitLab Pages][gitlab-jekyll], and [Continuous Integration (CI) services][ci-jekyll] have you covered. In most cases all you need to do is connect your repository to them, create a simple configuration file, and install the theme following the [Ruby Gem Method](#ruby-gem-method) above.
 {: .notice--info}
 
+Want to deploy this repository as-is on Netlify? A ready-to-use `netlify.toml` is included—see [Deploying on Netlify]({{ '/docs/netlify-deployment/' | relative_url }}) for the exact build command and settings.
+{: .notice--success}
+
 [netlify-jekyll]: https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/
 [gitlab-jekyll]: https://about.gitlab.com/2016/04/07/gitlab-pages-setup/
 [ci-jekyll]: https://jekyllrb.com/docs/deployment/automated/#continuous-integration-service

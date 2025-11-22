@@ -1,0 +1,14 @@
+# Netlify configuration for building the Minimal Mistakes docs site
+[build]
+  base = ""
+  publish = "public"
+  command = "bundle exec jekyll build --source docs --config docs/_config.yml --destination public --baseurl \"\" --url $URL"
+
+[build.environment]
+  JEKYLL_ENV = "production"
+  BUNDLE_GEMFILE = "docs/Gemfile"
+  BUNDLE_PATH = "vendor/bundle"
+  RUBY_VERSION = "3.2"
+
+[context.deploy-preview]
+  command = "bundle exec jekyll build --source docs --config docs/_config.yml --destination public --baseurl \"\" --url $DEPLOY_PRIME_URL"
